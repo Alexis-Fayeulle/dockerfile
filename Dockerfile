@@ -1,3 +1,4 @@
-FROM gradle:4.4.1-jdk8-alpine 
+FROM alpine 
 RUN apt update
 RUN apt -y install curl
+RUN apt -y install gradle
