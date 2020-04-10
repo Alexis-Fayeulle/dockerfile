@@ -1,4 +1,4 @@
 FROM openjdk:8-jdk 
-#RUN mkdir /gradlew
-COPY /bin/gradlew gradlew
-RUN chmod +x /gradlew/gradlew
+COPY /gradlew gradlew
+RUN mv /gradlew /bin/gradlew
+RUN chmod +x /bin/gradlew
